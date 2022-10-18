@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul, li{
+  list-style: none;
+}
+body {
+  background-color: #e5e5e5;
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  padding: 30px;
+  width: 700px;
+  height: 600px;
+  background: linear-gradient(to bottom, #F6F7F9 40%,#fff 0);
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.fotos{
+  display: flex;
+  flex-direction: column;
+
+}
+.info-prin{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.info-prin span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2493F8;
+  margin-bottom: 5px;
+}
+.info-prin h1{
+  color: #384047;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.info-prin p{
+  color: #67737E;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.info-prin a{
+  background: #2493F8;
+  color: #004391;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+    align-items: center;
+  text-decoration: none;
+  padding: 12px 24px;
+}
+.info-prin a:hover{
+  background: #187fe0;
+
+}
+.fotoPri{
+  width: 340px;
+  height: 380px;
+}
+.info-prin a::after{
+  content: '';
+  width: 24px;
+  height: 24px;
+  fill:#004391;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  top: -1px;
+  background: url('img/carrinho.svg');
+}
+
+
+.desc-produto:last-child {
+  margin-top: 30px;
+}
+.desc-produto h2{
+  color: #67737E;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.desc-produto{
+  position: relative;
+}
+.desc-produto ul li{
+  color: #67737E;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+ 
+}
+.desc-produto li::after{
+  content: '';
+  width: 16px;
+  height: 16px;
+  fill: #C6CCD2;
+  display: block;
+  margin-top: -13px;
+  position:absolute;
+  background: url('img/list-icon.svg') no-repeat;
+  left:0;
+
+  
+}
+
+.fotos-secun{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.fotos-secun img{
+  width: 100px;
+  height: 120px;
+}
+
+.suste::after{
+  content: '';
+  background: url(img/i-sustentabilidade.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  fill: #E1E5E8;
+  right: 15px;
+  top: -5px;
+}
+.entre::after{
+  content: '';
+  background: url(img/i-entrega.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  fill: #E1E5E8;
+  right: 15px;
+  top: -5px;
+}
+.modal-cont{
+  width: 100%;
+    position: fixed;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    align-items: center;
+}
+.modal-cont.ativo{
+  display: flex;
+
+}
+
+.modal{
+  color: blue;
+    padding: 10px;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
